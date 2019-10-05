@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/pushbar.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>endor.ones</title>
+</head>
+
+<body>
+    <div class="contenedor-primario">
+        <header>
+            <nav class="nav">
+                <button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button>
+                <img src="img/ww.png" class="logo" alt="" srcset="">
+                <p>endor.ones</p>
+            </nav>
+            <div class="contenedor-secundario">
+                <div class="titulo">
+                    <h1>URL</h1>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="contenedor-titulo">
+                <h1>HISTORIA</h1>
+            </div>
+            <div class="contenedor-contenido">
+                <div class="texto">
+                    <p>Los URL fueron una innovación en la historia de Internet, fueron usados por primera vez por Tim
+                        Berners-Lee en 1991, para permitir a los autores de documentos establecer hiperenlaces en la
+                        World Wide Web (WWW). Desde 1994, en los estándares de Internet, el concepto de LRU ha sido
+                        incorporado dentro del más general de URI, pero el término URL todavía se utiliza ampliamente.
+                    </p>
+                </div>
+            </div>
+            <footer>
+                <p>Hecho en México | 2019</p>
+                <p>endor.ones</p>
+            </footer>
+        </main>
+        <div data-pushbar-id="pushbar-menu" class="pushbar from_left pushbar-menu">
+            <div class="btn-cerrar">
+                <button data-pushbar-close> <i class="fas fa-times"></i> </button>
+                <p>Menú</p>
+            </div>
+            <nav class="menu">
+                <a href="index.html" class="submenu">Página Principal</a>
+                <a href="historia.html" class="active">Historia</a>
+                <a href="contexto.html" class="submenu">Contexto</a>
+                <a href="clasificacion.html" class="submenu">Clasificación</a>
+                <a href="ejemplos.html" class="submenu">Ejemplos</a>
+                <a href="significado.html" class="submenu">Significado</a>
+            </nav>
+        </div>
+    </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="js/pushbar.js"></script>
+    <script>
+        var pushbar = new Pushbar({
+            blur: true,
+            overlay: true
+        })
+    </script>
+</body>
+
+</html>

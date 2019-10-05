@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/pushbar.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>endor.ones</title>
+</head>
+
+<body>
+    <div class="contenedor-primario">
+        <header>
+            <nav class="nav">
+                <button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button>
+                <img src="img/ww.png" class="logo" alt="" srcset=""><p>endor.ones</p>
+            </nav>
+            <div class="contenedor-secundario">
+                <div class="titulo">
+                    <h1>URL</h1>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="contenedor-titulo">
+                <h1>CLASIFICACIÓN</h1>
+            </div>
+            <div class="contenedor-contenido">
+                <div class="texto">
+                    <p>Un URL se clasifica por su esquema, que generalmente indica el protocolo de red que se usa para
+                        recuperar, a través de la red, la información del recurso identificado. Un URL comienza con el
+                        nombre de su esquema, seguido por dos puntos, seguido por una parte específica del esquema.</p>
+
+                    <p> Algunos de los esquemas URL, como los populares mailto, http, ftp y file, junto con los de
+                        sintaxis general URL, se detallaron por primera vez en 1994 en el Request for Comments RFC 1630,
+                        sustituido un año después por los más específicos RFC 1738 y RFC 1808.</p>
+                </div>
+            </div>
+            <footer>    
+                    <p>Hecho en México | 2019</p>
+                    <p>endor.ones</p>
+            </footer>
+        </main>
+        <div data-pushbar-id="pushbar-menu" class="pushbar from_left pushbar-menu">
+            <div class="btn-cerrar">
+                <button data-pushbar-close> <i class="fas fa-times"></i> </button><p>Menú</p>
+            </div>
+            <nav class="menu">
+                <a href="index.html" class="submenu">Página Principal</a>
+                <a href="historia.html" class="submenu">Historia</a>
+                <a href="contexto.html" class="submenu">Contexto</a>
+                <a href="clasificacion.html" class="active">Clasificación</a>
+                <a href="ejemplos.html" class="submenu">Ejemplos</a>
+                <a href="significado.html" class="submenu">Significado</a>
+            </nav>
+        </div>
+    </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="js/pushbar.js"></script>
+    <script>
+        var pushbar = new Pushbar({
+            blur: true,
+            overlay:true
+        })
+    </script>
+</body>
+
+</html>
